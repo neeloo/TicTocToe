@@ -12,6 +12,7 @@ public class Client {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size = 3;
+
         GameController gameController = new GameController();
 
         //human player creation should be done in user controller
