@@ -31,7 +31,6 @@ public class GameController {
        game.makeMove();
     }
 
-
     public Player getWinner(Game game) {
        return game.getWinner();
     }
