@@ -5,6 +5,7 @@ import Module_3_LLD.TicTocToe.Model.*;
 import java.util.List;
 
 public class EasyPlayingStrategy implements  BotPlayingStrategy{
+
     @Override
     public Move makeMove(Board board, BotPlayer botPlayer) {
         for(List<Cell> row : board.getGrid()){
