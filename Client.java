@@ -32,6 +32,7 @@ public class Client {
        Game game1 = gameController .startGame(size , players ,winningStrategyTypes);
 
        //gameController.displayBoard(game1);
+
         //or
         while(gameController.getGameStatus(game1).equals(GameStatus.IN_PROGRESS)){
             //display the board
