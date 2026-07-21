@@ -18,9 +18,11 @@ public class RowWinningStrategy implements WinningStrategy{
         // we need the row to update the hashmap
         int row = move.getCell().getR();
         Character symbol = move.getPlayer().getSymbol().getSym();
+
 //        if(!rowMap.containsKey(row)){
 //            rowMap.put(row, new HashMap<>());
 //        }
+
         rowMap.putIfAbsent(row, new HashMap<>());
         HashMap<Character, Integer> countMap = rowMap.get(row);
         countMap.putIfAbsent(symbol, 0);
