@@ -6,6 +6,7 @@ import java.util.HashMap;
 // 0 -> {x: 1, o:1}, 1 -> {x: , o:}
 
 public class RowWinningStrategy implements WinningStrategy{
+
     HashMap<Integer, HashMap<Character, Integer>> rowMap;
 
     public RowWinningStrategy(){
