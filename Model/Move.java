@@ -2,7 +2,6 @@ package Module_3_LLD.TicTocToe.Model;
 
 public class Move {
     Cell cell;
-
     public Move(Cell cell, Player player) {
         this.cell = cell;
         this.player = player;
