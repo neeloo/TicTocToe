@@ -19,13 +19,11 @@ public class HumanPlayer extends Player {
             System.out.println("It 's " + getName() + "'s turn please Enter row and column :");
             int row = sc.nextInt();
             int col = sc.nextInt();
-
             //create the move
             move = new Move(new Cell(row, col), this);
         }
         //validate the move
         while (!MoveValidation.validate(move, board));
-
         //return the move
         return move;
     }
