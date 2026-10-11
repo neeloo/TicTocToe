@@ -17,7 +17,7 @@ public class Game {
     private Player winner;
 
     private Game(Builder builder) {
-        /// we will initialize things
+        // we will initialize things
         //todo -> validate size and player number
         this.board = new Board(builder.size);
         //validate all symbol of the player are unique
@@ -33,7 +33,7 @@ public class Game {
             } else if (type == WinningStrategyType.COLUMN) {
                 this.winningStrategies.add(new ColWinningStrategy());
             } else {
-                new InValidWinningStrategy("Invalid winning strategy");
+                throw new InValidWinningStrategy("Invalid winning strategy");
             }
         }
         this.winner = null;
@@ -156,8 +156,6 @@ public class Game {
             winningStrategy.handleUndo(lastMove);
         }
     }
-
-
 
     /// builder class for if in future game grow  then configuration kind of think
     public static class Builder {
