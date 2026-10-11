@@ -34,7 +34,6 @@ public class Board {
             }
         }
     }
-
     public void display() {
         for(List<Cell>row : grid){
             for(Cell cell : row){
