@@ -17,7 +17,6 @@ public class GameController {
                 .build();
 
     }
-
     public void displayBoard(Game game1) {
        game1.getBoard().display();
     }
@@ -33,7 +32,6 @@ public class GameController {
     public Player getWinner(Game game) {
        return game.getWinner();
     }
-
 
     ///undo implement
     public void undo(Game game) {
