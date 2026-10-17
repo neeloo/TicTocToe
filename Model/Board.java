@@ -28,7 +28,7 @@ public class Board {
         this.grid= new ArrayList<>();
         //grid construct ourself
         for(int i =0; i <size ;i++){
-            grid.add(new ArrayList<>()); ///adding array for 3  , , , -> add 3 cell -> cell,cell,cell
+            grid.add(new ArrayList<>()); //adding array for 3  , , , -> add 3 cell -> cell,cell,cell
             for( int j =0; j <size; j++){
                 grid.get(i).add(new Cell(i , j));
             }
