@@ -22,17 +22,18 @@ public class RowWinningStrategy implements WinningStrategy{
 //        if(!rowMap.containsKey(row)){
 //            rowMap.put(row, new HashMap<>());
 //        }
-
         rowMap.putIfAbsent(row, new HashMap<>());
         HashMap<Character, Integer> countMap = rowMap.get(row);
         countMap.putIfAbsent(symbol, 0);
         countMap.put(symbol, countMap.get(symbol) + 1);
+        // If count has reached the size of board -> means full row has the same symbol
 
-        // If count has reached the size of board -> means full row has same symbol
-        if(countMap.get(symbol) == board.getSize()){
-            return true;
-        }
-        return false;
+//        if(countMap.get(symbol) == board.getSize()){
+//            return true;
+//        }
+//        return false;
+
+        return countMap.get(symbol) == board.getSize();
     }
 
     @Override
