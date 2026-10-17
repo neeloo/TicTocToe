@@ -14,7 +14,7 @@ public class BotPlayingStrategyFactory {
         } else if (level.equals(BotdifficultyLevel.HARD)) {
             return new HardPlayingBotStrategy();
         } else {
-            ///custom exception
+            //custom exception
             throw new InValidBotDefficultyLevel("Invalid Difficulty Level");
         }
     }
