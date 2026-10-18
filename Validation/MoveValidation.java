@@ -1,5 +1,4 @@
 package Module_3_LLD.TicTocToe.Validation;
-
 import Module_3_LLD.TicTocToe.Exception.InValidMoveBoardException;
 import Module_3_LLD.TicTocToe.Exception.InValidMoveException;
 import Module_3_LLD.TicTocToe.Model.Board;
